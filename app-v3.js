@@ -26,10 +26,10 @@ function init() {
   var html = `
 <header class="nexmoe-nav">
 	<div class="navSize">
-			<a href="/"><img class="avatar" src="https://i.loli.net/2020/04/24/wCxMZFtiv6aKmQ1.png"/></a>
+			<a href="/"><img class="avatar" src="https://i.loli.net/2020/07/09/UHrRpVKtwZIvumg.jpg"/></a>
 			<div class="nav_menu">
 				<ul class="menu_ul">
-					<li class="menu_li"><a href="https://5mayrain.github.io/" target="_blank">博客</a></li>
+					<li class="menu_li"><a href="https://blog.virayer.cn/" target="_blank">博客</a></li>
 					<li class="menu_li"><a href="https://drive.google.com/" target="_blank">登陆</a></li>
 				</ul>
 				<div class="nav_icon" ></div>
@@ -392,7 +392,7 @@ function append_files_to_list(path, files) {
       var ext = p.split('.').pop().toLowerCase();
       if ("|html|php|css|go|java|js|json|txt|sh|md|mp4|webm|avi|bmp|jpg|jpeg|png|gif|m4a|mp3|flac|wav|ogg|mpg|mpeg|mkv|rm|rmvb|mov|wmv|asf|ts|flv|pdf|".indexOf(`|${ext}|`) >= 0) {
         targetFiles.push(filepath);
-        p += "?a=view";
+        p += "";//?a=view
         c += " view";
       }
       html += `<li class="mdui-list-item file mdui-ripple" target="_blank"><a gd-type="${item.mimeType}" href="${p}" class="${c}">
